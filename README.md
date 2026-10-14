@@ -1,19 +1,60 @@
-# React + Vite
+# Pixelcraft Studios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page website for a fictional digital agency. It presents the studio's services, selected client projects, testimonials, and a project inquiry form.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Agency landing page with navigation and dedicated sections for services, work, testimonials, and contact
+- Portfolio filtering by project category
+- Project case-study modal with client, technology, and outcome details
+- Contact form with required-field validation and a client-side confirmation state
+- Responsive layouts styled with Tailwind CSS
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React 19
+- Vite
+- Tailwind CSS 4
+- ESLint
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Getting Started
 
-## Expanding the ESLint configuration
+### Requirements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (version compatible with the installed Vite release)
+- npm
+
+### Install and run
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite to view the site.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server. |
+| `npm run build` | Create a production build in `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run lint` | Run ESLint across the project. |
+
+## Project Structure
+
+```text
+src/
+  components/   Page sections and the project modal
+  data/         Agency services, projects, and testimonials
+  assets/       Local application assets
+  App.jsx       Single-page layout
+  App.css       Application styles
+  index.css     Global styles and Tailwind import
+  main.jsx      React application entry point
+```
+
+## Notes
+
+The contact form currently validates and displays a confirmation in the browser; it does not submit inquiries to a server. Portfolio images and testimonial avatars are loaded from Unsplash.
