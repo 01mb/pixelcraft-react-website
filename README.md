@@ -11,7 +11,7 @@ A responsive, single-page website for a fictional digital agency. It presents th
 - Responsive layouts styled with Tailwind CSS
 
 ## Tech Stack
-- test
+
 - React 19
 - Vite
 - Tailwind CSS 4
